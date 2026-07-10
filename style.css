@@ -1,0 +1,131 @@
+:root{
+  --primary: #f7f3ec;
+  --secondary: #a99b9a;
+  --accent-one: #d9d8d2;
+  --accent-two: #262626;
+}
+
+body{
+    margin: 0;
+    background: var(--primary);
+    color: var(--accent-two);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.35rem;
+}
+
+p{
+    font-size: 1.05rem;
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+header{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo{
+    width: 220px;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a, footer a{
+    color: var(--accent-two);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover, footer a:hover{
+    border-bottom: 2px solid var(--secondary);
+}
+
+main{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1rem 2rem 4rem;
+}
+
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 3rem 0 5rem;
+}
+
+.reverse-two-column{
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 3rem 0 5rem;
+}
+
+.column-text{
+    max-width: 560px;
+}
+
+.promise-list{
+    background: white;
+    padding: 2rem;
+    border-left: 6px solid var(--secondary);
+}
+
+.button{
+    display: inline-block;
+    border: none;
+    background: var(--accent-two);
+    color: white;
+    padding: .95rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background: var(--accent-one);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 2rem;
+}
+
+.footer-links, .social-links{
+    display: grid;
+    gap: .5rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
